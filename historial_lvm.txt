@@ -1,0 +1,128 @@
+    1  sudo fdisk /dev/sdd
+    2  p
+    3  sudo fdisk /dev/sdd
+    4  sudo mkswap /dev/sdd1
+    5  sudo swapon /dev/sdd1
+    6  free -h
+    7  swapon -s
+    8  cat /proc/swaps
+    9  sudo fdisk /dev/sdc
+   10  sudo wipefs -a /dev/sdc1
+   11  sudo wipefs -a /dev/sdc2
+   12  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdc1 /dev/sdc2
+   13  sudo pvcreate /dev/sdd5
+   14  sudo fdisk /dev/sdd
+   15  sudo swapoff /dev/sdd1
+   16  sudo fdisk /dev/sdd
+   17  sudo swapon /dev/sdd1
+   18  sudo pvcreate /dev/sdd5
+   19  sudo pvcreate /dev/sdd6
+   20  sudo pvs
+   21  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   22  sudo vgcreate vg_web /dev/sdc2
+   23  sudo vgs
+   24  sudo pvs
+   25  sudo lvcreate -L 1G -n lv_web1 vg_web
+   26  sudo lvcreate -L 512M -n lv_web2 vg_web
+   27  sudo lvcreate -L 512M -n lv_web3 vg_web
+   28  sudo lvs
+   29  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   30  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   31  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   32  sudo mkdir /mnt/web1 /mnt/web2 /mnt/web3
+   33  sudo mount /dev/mapper/vg_web-lv_web1 /mnt/web1
+   34  sudo mount /dev/mapper/vg_web-lv_web2 /mnt/web2
+   35  sudo mount /dev/mapper/vg_web-lv_web3 /mnt/web3
+   36  free -h
+   37  swapon -s
+   38  sudo pvs
+   39  sudo vgs
+   40  sudo lvs
+   41  sudo fdisk -l
+   42  git clone https://github.com/Lyzee1/TP2_AySO_Moreno_Ramiro.git
+   43  cdd TP2_AySO_Moreno_Ramiro/
+   44  cd TP2_AySO_Moreno_Ramiro/
+   45  sudo pvs > pvs.txt
+   46  sudo vgs > vgs.txt
+   47  sudo lvs > lvs.txt
+   48  history > historial_lvm.txt
+   49  git add .
+   50  git commit -m "TP2 Terminado - LVM y Swap"
+   51  git config --global user.email "you@example.com"
+   52  git config --global user.email "ramimoreno377@gmail.com"
+   53  git config --global user.name "Ramiro Moreno"
+   54  git add .
+   55  git commit -m "TP2 Terminado"
+   56  git push
+   57  git add .
+   58  git commit -m "TP2 TERMINADO"
+   59  git push
+   60  git push origin main
+   61  git push 
+   62  git clone git@github.com:Lyzee1/TP2_AySO_Moreno_Ramiro.git
+   63  sudo pvs > pvs.txt
+   64  sudo vgs > vgs.txt
+   65  sudo lvs > lvs.txt
+   66  history > historial_lvm.txt
+   67  git add .
+   68  git commit -m "TP2 TERMINADO"
+   69  git push origin main
+   70  git remote set-url origin git@github.com:Lyzeel/TP2_AySO_Moreno_Ramiro.git
+   71  git push origin main
+   72  git push
+   73  ls ~/.ssh
+   74  ssh-keygen -t ed25519 -C "Lyzee1@github.com"
+   75  ls ~/.ssh
+   76  cat ~/.ssh/id_ed25519.pub
+   77  ssh -T git@github.com
+   78  git push origin main
+   79  git clone git@github.com:Lyzee1/TP2_AySO_Moreno_Ramiro.git
+   80  git@github.com:Lyzee1/TP2_AySO_Moreno_Ramiro.git
+   81  sudo pvs > pvs.txt
+   82  sudo vgs > vgs.txt
+   83  history > historial_lvm.txt
+   84  git add .
+   85  git rm --cached TP2_AySO_Moreno_Ramiro/
+   86  -f
+   87  git rm --cached TP2_AySO_Moreno_Ramiro/
+   88  git rm --cached TP2_AySO_Moreno_Ramiro/ -f
+   89  git add .
+   90  git commit -m "TP2"
+   91  git push
+   92  git push origin main
+   93  git rm --cached TP2_AySO_Moreno_Ramiro -r
+   94  rm -rf TP2_AySO_Moreno_Ramiro/.git
+   95  git remote set-url origin git@github.com:Lyzeel/TP2_AySO_Moreno_Ramiro.git
+   96  git push origin main
+   97  git remote -v
+   98  git status
+   99  git add TP2_AySO_Moreno_Ramiro/
+  100  git push origin main
+  101  git remote -v
+  102  git remote set-url origin git@github.com:Lyzee1/TP2_AySO_Moreno_Ramiro.git
+  103  cd ..
+  104  git remote set-url origin git@github.com:Lyzeel/TP2_AySO_Moreno_Ramiro.git
+  105  cd TP2_AySO_Moreno_Ramiro/
+  106  git remote set-url origin git@github.com:Lyzeel/TP2_AySO_Moreno_Ramiro.git
+  107  git remote -v
+  108  git status 
+  109  git add .
+  110  git commit -m "TP2 TERMINADO"
+  111  git push origin main
+  112  cd ~
+  113  rm -rf TP2_AySO_Moreno_Ramiro
+  114  ssh -T git@github.com
+  115  git clone git@github.com:Lyzeel/TP2_AySO_Moreno_Ramiro.git
+  116  cd TP2_AySO_Moreno_Ramiro
+  117  git clone git@github.com:Lyzeel/TP2_AySO_Moreno_Ramiro.git
+  118  echo "# TP2_AySO_Moreno_Ramiro" >> README.md
+  119  git init
+  120  git add README.md
+  121  git commit -m "first commit"
+  122  git branch -M main
+  123  git remote add origin git@github.com:Lyzee1/TP2_AySO_Moreno_Ramiro.git
+  124  git push -u origin main
+  125  sudo pvs > pvs.txt
+  126  sudo vgs > vgs.txt
+  127  sudo lvs > lvs.txt
+  128  history > historial_lvm.txt
